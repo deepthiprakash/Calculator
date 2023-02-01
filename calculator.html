@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="https://kit.fontawesome.com/d1a454c8bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="full">
+        <h1 class="calc" style="padding-top:10px ;">CALCULATOR</h1>
+        
+        <div class="container">
+            <div class="row">
+                <button onclick="" class="col-lg-12 col-md-12 col-sm-12" style="width:245px; margin-top:-15px; margin-bottom: 12px; "> 
+                <form action="">
+                    <input id="result" type="text" placeholder="0" style="background-color:rgba(0, 0, 0, 0); box-shadow: 5px 10px 8px #130f0f;
+                    ; width: 180px; height: 35px;">
+                </form>
+                </button>
+            </div>
+            <div class="row ">
+
+                <button onclick="allclear()" class="col-lg-3 col-md-3 col-sm-3" style="color:rgb(118, 11, 11);">AC</button>
+                <button onclick="displaydata('.')" class="col-lg-3 col-md-3 col-sm-3">.
+                    <!-- <i class="fa-solid fa-repeat"></i> -->
+                </button>
+                <button onclick="backspace()" class=" col-lg-3 col-md-3 col-sm-3">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button onclick="displaydata('/')" class="col-lg-3 col-md-3 col-sm-3" >/</button>
+            </div>
+            <div class="row">
+                <button onclick="displaydata(7)" class="col-lg-3 col-md-3 col-sm-3">7</button>
+                <button onclick="displaydata(8)" class="col-lg-3 col-md-3 col-sm-3">8</button>
+                <button onclick="displaydata(9)" class="col-lg-3 col-md-3 col-sm-3">9</button>
+                <button onclick="displaydata('*')" class="col-lg-3 col-md-3 col-sm-3" >*</button>
+            </div>
+            <div class="row">
+                <button onclick="displaydata(4)" class="col-lg-3 col-md-3 col-sm-3">4</button>
+                <button onclick="displaydata(5)" class="col-lg-3 col-md-3 col-sm-3">5</button>
+                <button onclick="displaydata(6)" class="col-lg-3 col-md-3 col-sm-3">6</button>
+                <button onclick="displaydata('-')" class="col-lg-3 col-md-3 col-sm-3" >-</button>
+            </div>
+            <div class="row">
+                <button onclick="displaydata(1)" class="col-lg-3 col-md-3 col-sm-3">1</button>
+                <button onclick="displaydata(2)" class="col-lg-3 col-md-3 col-sm-3">2</button>
+                <button onclick="displaydata(3)" class="col-lg-3 col-md-3 col-sm-3">3</button>
+                <button onclick="displaydata('+')" class="col-lg-3 col-md-3 col-sm-3" >+</button>
+            </div>
+            <div class="row">
+                <button onclick="displaydata(0)" class="col-lg-6 col-md-6 col-sm-6" style="width:218px;">0</button>
+                <button onclick="output()" class="col-lg-6 col-md-6 col-sm-6">=</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>
